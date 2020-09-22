@@ -1,6 +1,16 @@
 # Introduction to Conda
 
 
+## What you will learn
+
+* What conda is
+* How to load the conda package on eddie
+* Setting up conda parameters on eddie, envs_dirs and pkgs_dirs variables
+* Creating, removing an conda envirnoment
+* adding packages to a conda envirnoment
+* Search for packages
+
+
 # Anaconda on Eddie
 
 https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
