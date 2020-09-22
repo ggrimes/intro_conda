@@ -1,8 +1,10 @@
-#Make sure qlogged or use wild west node
+#Make sure qlogged 
 
 qlogin -l h_vmem=16G
-ssh -X node3g22
 
+# load anaconda
+
+module load anaconda
 
 
 
