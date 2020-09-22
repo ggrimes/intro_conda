@@ -63,10 +63,9 @@ conda config --set env_prompt '({name}) '
 # list packages in current envirnoment
 conda list
 
-# Try and install bedtools
+# Try and install tree
+conda search tree
 
-# install another rpackage
-conda search bedtools
 
 #can't find it
 
@@ -77,6 +76,10 @@ conda search bedtools
 # This show it's in the bioconda channel
 
 #search for it
+conda install -c conda-forge tree
+
+conda config --add/append channels bioconda
+
 conda search -c bioconda bedtools
 
 conda config --add/append channels bioconda
