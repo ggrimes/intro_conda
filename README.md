@@ -7,8 +7,9 @@
 * How to load the conda package on eddie
 * Setting up conda parameters on eddie, envs_dirs and pkgs_dirs variables
 * Creating, removing an conda envirnoment
-* adding packages to a conda envirnoment
+* Adding packages to a conda envirnoment
 * Search for packages
+* conda channels
 
 
 # Anaconda on Eddie
