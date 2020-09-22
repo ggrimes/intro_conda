@@ -21,7 +21,6 @@ https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=
 ```
 qlogin -l h_vmem=8G
 module load anaconda
-
 ```
 
 
@@ -30,5 +29,6 @@ module load anaconda
 * [conda website](https://docs.conda.io/en/latest/)
 * [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
 * https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
-* https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/
-* https://www.youtube.com/watch?v=23aQdrS58e0&ab_channel=Academind
+* [carpentry course](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/)
+
+* [youtube video](https://www.youtube.com/watch?v=23aQdrS58e0&ab_channel=Academind)
