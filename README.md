@@ -5,6 +5,11 @@
 
 https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
 
+```
+qlogin -l h_vmem=8G
+module load anaconda
+```
+
 
 # Useful Links
 
