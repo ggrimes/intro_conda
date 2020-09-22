@@ -27,6 +27,6 @@ module load anaconda
 # Useful Links
 
 * [conda website](https://docs.conda.io/en/latest/)
-* [conda cheatsheet](file:///Users/ggrimes2/Downloads/conda-cheatsheet%20(1).pdf)
+* [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
 * https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
 * https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/
