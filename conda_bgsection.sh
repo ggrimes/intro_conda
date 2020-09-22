@@ -3,19 +3,6 @@
 qlogin -l h_vmem=16G
 ssh -X node3g22
 
-# go to scratch area
-/exports/eddie/scratch/ggrimes2
-
-#Installing conda on 
-
-#Google > miniconda
-#copy link
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-$ bash Miniconda3-latest-Linux-x86_64.sh
-#Set install directory
-	E.g /exports/igmm/eddie/bioinfsvice/ggrimes/miniconda3
-#Initialize on startup
-#If you want to reverse or “undo” the changes to your .bashrc, then you can re-run the conda init command and pass the --reverse option.
 
 
 
@@ -28,14 +15,14 @@ $ bash Miniconda3-latest-Linux-x86_64.sh
 # You don't want to put programs into your base environment, though. 
 #Create separate environments to keep your programs isolated from each other.
 
-#C reate a new environment and install a package in it.
+#Create a new environment and install a package in it.
 # There are 2 ways --name will install in envs_dirs 
 
-conda create --name beegee
+conda create --name my_first_conda_env
 #will create envirnoment in envs_dirs
 
 #prefix custom location
-conda create --prefix  ./beegee
+conda create --prefix  ./my_first_conda_env
 
 
 # Specifying a path to a subdirectory of your project directory when creating an environment has the following benefits:
@@ -61,7 +48,7 @@ conda create --prefix  ./beegee
 
 #You can list all discoverable environments with `conda info --envs`.
 
-conda activate ../beegee
+conda activate ../my_first_conda_env
 #show bin dir add to path
 echo $PATH
 
@@ -134,7 +121,7 @@ conda update -c bioconda bedtools
 
 conda list --explicit > env.txt
 
-conda create --prefix barry --file env.txt
+conda create --prefix my_second_conda_env --file env.txt
 
 
 #Exporting an environment file across platforms
@@ -145,7 +132,7 @@ conda env export > environment.yml
 
 # then you can use 
 
-conda env create --prefix robin --file environment.yml
+conda env create --prefix my_third_conda_env --file environment.yml
 
 #Creating an environment file manually
 #You can create an environment file (environment.yml) manually to share with others.
@@ -155,7 +142,7 @@ conda env create --prefix robin --file environment.yml
 
 #YA simplier way to do this for yourself is to make an exact copy of an environment by creating a clone of it:
 
-conda create --prefix ./maurice --clone ./beegee
+conda create --prefix ./my_fourth_conda_env --clone ./my_first_conda_env
 
 # Removing an environment
 
@@ -165,7 +152,7 @@ conda remove --prefix ./maurice --all
 
 #You may instead use 
 
-conda env remove --prefix ./beegee
+conda env remove --prefix ./my_first_conda_env
 
 ##To verify that the environment was removed, in your terminal window or an Anaconda Prompt, run:
 
