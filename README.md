@@ -19,6 +19,7 @@ https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=
 ## Log into Eddie
 
 ```
+#login to worker node using 8G
 qlogin -l h_vmem=8G
 module load anaconda
 ```
