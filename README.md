@@ -18,3 +18,4 @@ module load anaconda
 
 * https://docs.conda.io/en/latest/
 * https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
+* https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/
