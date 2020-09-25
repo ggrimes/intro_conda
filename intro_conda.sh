@@ -2,14 +2,14 @@
 
 qlogin -l h_vmem=16G
 
-#move to scratch directory
-cd /exports/eddie/scratch/ggrimes2
+#move to your scratch directory
+cd /exports/eddie/scratch/${USER}
 
 # load anaconda
 module load anaconda/5.3.1
 
 # set envs_dirs & pkgs_dirs
- conda config --add envs_dirs /exports/eddie/scratch/ggrimes2/envs_dirs
+conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
 
 
 #show wich version of conda you are using
