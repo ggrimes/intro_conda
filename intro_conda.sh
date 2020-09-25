@@ -4,6 +4,8 @@
 # load anaconda
 module load anaconda/5.3.1
 
+#if you don't want conda onstartup
+conda config --set auto_activate_base false
 
 ##log into worker node
 qlogin -l h_vmem=8G
