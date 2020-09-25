@@ -16,12 +16,27 @@
 
 https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
 
+
+
+
 ## Log into Eddie
 
 ```
-#login to worker node using 8G
+module load anaconda/5.3.1
+
+
+##log into worker node
 qlogin -l h_vmem=8G
-module load anaconda
+
+#move to your scratch directory
+cd /exports/eddie/scratch/${USER}
+
+# load anaconda
+module load anaconda/5.3.1
+
+# set envs_dirs & pkgs_dirs
+conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
+conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/pkgs_dirs
 ```
 
 

@@ -5,7 +5,9 @@
 module load anaconda/5.3.1
 
 #if you don't want conda onstartup
+#https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default
 conda config --set auto_activate_base false
+#then you would run 'conda activate' to activate base
 
 ##log into worker node
 qlogin -l h_vmem=8G
