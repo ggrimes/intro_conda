@@ -1,6 +1,12 @@
-#Make sure qlogged into worker node
+# first time setup
+# log into Eddie
+# ssh <username>@eddie.ecdf.ed.ac.uk
+# load anaconda
+module load anaconda/5.3.1
 
-qlogin -l h_vmem=16G
+
+##log into worker node
+qlogin -l h_vmem=8G
 
 #move to your scratch directory
 cd /exports/eddie/scratch/${USER}
