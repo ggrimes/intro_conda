@@ -1,4 +1,3 @@
-#sh  /exports/igmm/eddie/public/bailey/setup.sh
 # source ~/.bashrc
 
 # first time setup
@@ -167,7 +166,7 @@ conda config --show channels
 # different version avialable
 # https://en.wikipedia.org/wiki/Software_versioning
 # semantic versioning
-conda install -c bioconda bedtools           #install latest version
+conda install -c bioconda bedtools            #install latest version
 #conda install -c bioconda bedtools=2.29.2    #specific version major.minor.patch
 #conda install -c bioconda bedtools=2.27      #latest minor
 #conda install -c bioconda bedtools=2.27.0    #sepcifc version
@@ -250,35 +249,6 @@ conda remove --prefix ./my_first_conda_env --all
 
 conda env remove --prefix ./my_second_conda_env
 #remaning third and fourth envs
-
-# Updating an environment (Updates conda packages to the latest compatible version.)
-# You may need to update your environment for a variety of reasons. For example, it may be the case that:
-#
-# one of your core dependencies just released a new version (dependency version number update).
-#
-# you need an additional package for data analysis (add a new dependency).
-#
-# you have found a better package and no longer need the older package (add new dependency and remove old dependency).
-#
-# If any of these occur, all you need to do is update the contents of your environment.yml file accordingly and then run the following command
-
-#make sure in the environment
-#Closely related to installing a particular version of a conda package is
-#updating the installed version to the latest version possible that remains compatible with other installed software.
-#conda will determine if it is possible to update dependencies of the package(s) you are directly updating, and do so if resolvable.
-#At times, the single specified package will be updated exclusively since the current dependencies are correct for the new version.
-#Obviously, at other times updating will do nothing because you are already at the latest version possible.
-#The command conda update PKGNAME is used to perform updates.
-#Update is somewhat less "aggressive" than install in the sense that installing a specific (later) version
-#will revise the versions in the dependency tree to a greater extent than an update.
-#Often update will simply choose a later PATCH version even though potentially a later MAJOR or MINOR version
-#could be made compatible with other installed packages.
-
-
-conda update -c bioconda bedtools
-
-
-
 
 
 # Cleaning up
