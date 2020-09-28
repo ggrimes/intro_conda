@@ -1,3 +1,6 @@
+#sh  /exports/igmm/eddie/public/bailey/setup.sh
+# source ~/.bashrc
+
 # first time setup
 # log into Eddie
 # ssh <username>@eddie.ecdf.ed.ac.uk
