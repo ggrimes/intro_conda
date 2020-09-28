@@ -266,13 +266,11 @@ conda clean -a
 ls pkgs_dirs
 du -sh pkgs_dirs
 
-# create envirnoment for snakemake tutorial
-conda deactivate
+#for snakemake part of the course
 git clone https://git.ecdf.ed.ac.uk/ltalmane/snakemaketut.git
-cd snakemaketut/
-conda env create
-conda env create –f=environment.yml
+cd snakemaketut
+conda env create –f environment.yml
+conda activate snakeTut
 
 #using mamba
-#conda create -n mamba mamba
-mamba env create --prefix ./snaketut -f environment.yml
+conda create -n mamba mamba
