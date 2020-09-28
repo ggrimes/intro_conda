@@ -3,18 +3,25 @@
 
 ## What you will learn
 
-* What conda is
-* How to load the conda package on eddie
-* Setting up conda parameters on eddie, envs_dirs and pkgs_dirs variables
-* Creating, removing an conda envirnoment
-* Adding packages to a conda envirnoment
-* Search for packages
-* conda channels
+* What [conda](https://docs.conda.io/projects/conda/en/latest/index.html) is.
+* How to load the conda package on [eddie](https://www.ed.ac.uk/information-services/research-support/research-computing/ecdf/high-performance-computing)
+  - ```module load anacoda anaconda/5.3.1```
+* Setting up conda variables on eddie,
+  - conda [config --add](https://docs.conda.io/projects/conda/en/latest/commands/config.html)
+  - envs_dirs
+  - pkgs_dirs
+* Creating, removing an conda environment
+  - conda [create](https://docs.conda.io/projects/conda/en/latest/commands/create.html)
+  - remove [remove](https://docs.conda.io/projects/conda/en/latest/commands/remove.html)
+* Adding packages to a conda environment,
+  - conda [install](https://docs.conda.io/projects/conda/en/latest/commands/install.html)
+* Searching for packages, conda [search](https://docs.conda.io/projects/conda/en/latest/commands/search.html)
+* conda [channels](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#:~:text=Conda%20channels%20are%20the%20locations,to%20directories%20containing%20conda%20packages.)
 
 
 # Anaconda on Eddie
 
-https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
+[Anaconda on Eddie](https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda)
 
 
 
