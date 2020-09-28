@@ -10,12 +10,15 @@
   - conda [config --add](https://docs.conda.io/projects/conda/en/latest/commands/config.html)
   - envs_dirs
   - pkgs_dirs
-* Creating, removing an conda environment
+* Creating, updating and removing a conda environment
   - conda [create](https://docs.conda.io/projects/conda/en/latest/commands/create.html)
-  - remove [remove](https://docs.conda.io/projects/conda/en/latest/commands/remove.html)
+  - conda [remove](https://docs.conda.io/projects/conda/en/latest/commands/remove.html)
+  - conda [update](https://docs.conda.io/projects/conda/en/latest/commands/update.html)
 * Adding packages to a conda environment,
   - conda [install](https://docs.conda.io/projects/conda/en/latest/commands/install.html)
-* Searching for packages, conda [search](https://docs.conda.io/projects/conda/en/latest/commands/search.html)
+* Searching for packages,
+  - conda [search](https://docs.conda.io/projects/conda/en/latest/commands/search.html)
+  - [Search Anaconda cloud](https://anaconda.org/)
 * conda [channels](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#:~:text=Conda%20channels%20are%20the%20locations,to%20directories%20containing%20conda%20packages.)
 
 
@@ -53,5 +56,4 @@ conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/pkgs_dirs
 * [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
 * https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
 * [carpentry course](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/)
-
 * [youtube video](https://www.youtube.com/watch?v=23aQdrS58e0&ab_channel=Academind)
