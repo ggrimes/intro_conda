@@ -37,7 +37,6 @@ conda env list
 
 # Managing environments
 # Conda allows you to create separate environments containing files, packages,
-#
 # and their dependencies that will not interact with other environments.
 #
 # When you begin using conda, you already have a default environment named base.
@@ -48,16 +47,16 @@ conda env list
 # There are 2 ways --name will install in envs_dirs
 
 conda create --name my_first_named_conda_env
-#will create envirnoment in envs_dirs
+# will create envirnoment in envs_dirs
 
 #To activate this environment, use
 #
  conda activate my_first_named_conda_env
 
-# lets' get out of envirnoment
+# let's get out of environment
 conda deactivate
 
-#prefix custom location
+# prefix custom location
 conda create --prefix  ./my_first_conda_env
 
 
@@ -84,32 +83,32 @@ conda create --prefix  ./my_first_conda_env
 # Specifying an install path when creating your conda environments makes it so that your command prompt is
 # now prefixed with the active environment’s absolute path rather than the environment’s name.
 #
-#You can list all discoverable environments with `conda info --envs`.
+# You can list all discoverable environments with `conda info --envs`.
 
 conda activate ./my_first_conda_env
 #activate env
-conda activate /exports/eddie/scratch/ggrimes2/my_first_conda_env
+conda activate /exports/eddie/scratch/${USER}/my_first_conda_env
 #show bin dir add to path
 echo $PATH
 
 
-#talk about environment prompt to be smaller (like unix PS1 (Prompt String 1)  envirnoment varibale)
+#talk about setting environment prompt to be smaller (like unix PS1 (Prompt String 1)  environment varibale)
 conda config --describe env_prompt
 conda config --set env_prompt '({name}) '
-cat cat ~/.condarc
+cat ~/.condarc
 #to get back
 #conda config --set env_prompt '({default_env})'
 
 conda deactivate
 #smaller prompt
-conda activate /exports/eddie/scratch/ggrimes2/my_first_conda_env
+conda activate /exports/eddie/scratch/${USER}/my_first_conda_env
 
 # list conda environments
 conda env
 #another way
 conda info --envs
 
-# list packages(software) in current environment
+# list packages (software) in current environment
 conda list
 
 #  Search for packages and display associated information. The
@@ -139,7 +138,7 @@ which -a tree
 
 tree my_first_conda_env
 
-# we can add channels usiong conda config command
+# we can add channels using conda config command
 # conda config --add/append/remove/show
 conda config --help
 
@@ -152,7 +151,7 @@ conda config --show channels
 #Add the 'conda-forge' channel as a backup to 'defaults':
 conda config --append channels conda-forge
 
-#Lte try a bioinformatics package bedtools
+#Let try a bioinformatics package bedtools
 #https://anaconda.org/search?q=bedtools
 
 # back to search
@@ -169,7 +168,7 @@ conda config --show channels
 conda install -c bioconda bedtools            #install latest version
 #conda install -c bioconda bedtools=2.29.2    #specific version major.minor.patch
 #conda install -c bioconda bedtools=2.27      #latest minor
-#conda install -c bioconda bedtools=2.27.0    #sepcifc version
+#conda install -c bioconda bedtools=2.27.0    #specific version
 #conda install -c bioconda bedtools
 
 conda list
@@ -221,7 +220,7 @@ conda env export > environment.yml
 # then you can use
 
 conda env create --prefix my_third_conda_env --file environment.yml
-conda activate /exports/eddie/scratch/ggrimes2/my_third_conda_env
+conda activate /exports/eddie/scratch/${USER}/my_third_conda_env
 #show packages are installed
 conda list
 #retuirn to first env
@@ -230,7 +229,7 @@ conda deactivate
 # Creating an environment file manually
 # You can create an environment file (environment.yml)
 # manually to share with others.
-# This is recommended if you want it ot be cross platform
+# This is recommended if you want it to be cross platform
 
 # EXAMPLE: A simple environment file:
 
@@ -238,10 +237,10 @@ conda deactivate
 # exact copy of an environment by creating a clone of it:
 
 conda create --prefix ./my_fourth_conda_env --clone ./my_first_conda_env
-conda activate /exports/eddie/scratch/ggrimes2/my_fourth_conda_env
+conda activate /exports/eddie/scratch/${USER}/my_fourth_conda_env
 # Removing an environment
 
-#T o remove an environment, in your terminal window or an Anaconda Prompt, run:
+#To remove an environment, in your terminal window or an Anaconda Prompt, run:
 
 conda remove --prefix ./my_first_conda_env --all
 
@@ -269,8 +268,11 @@ du -sh pkgs_dirs
 #for snakemake part of the course
 git clone https://git.ecdf.ed.ac.uk/ltalmane/snakemaketut.git
 cd snakemaketut
+
+#The -f and --file options do the same thing.
 conda env create –f environment.yml
 conda activate snakeTut
 
 #using mamba
+#the first mamba is the environment name, the second the package to load
 conda create -n mamba mamba
