@@ -2,7 +2,7 @@
 # by Bailey Harrington, 28 September 2020
 
 # Specify the filename patterns this syntax applies to
-syntax "python" "\.smk$" "Snakemake$" "\.snake$"
+syntax "python" "\.smk$" "Snakefile$" "\.snake$"
 
 # describes the shebang line as the header
 header "^#!.*/python[-0-9._]*"
