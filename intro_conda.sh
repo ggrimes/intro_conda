@@ -5,7 +5,7 @@
 # ssh <username>@eddie.ecdf.ed.ac.uk
 # load anaconda
 module load anaconda/5.3.1
-
+conda init
 #if you don't want conda onstartup
 #https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default
 #conda config --set auto_activate_base false
