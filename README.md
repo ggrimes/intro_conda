@@ -32,7 +32,7 @@
 ## Log into Eddie
 
 ```
-module load anaconda/5.3.1
+
 
 
 ##log into worker node
@@ -40,20 +40,25 @@ qlogin -l h_vmem=8G
 
 #move to your scratch directory
 cd /exports/eddie/scratch/${USER}
+mkdir conda_tutorial
+cd conda_tutorial
 
 # load anaconda
-module load anaconda/5.3.1
+module load roslin/conda/4.9.1
 
 #If this is the first time using conda run
 conda init
 
+#source .bashrc
+source ~/.bashrc
+
 # set envs_dirs & pkgs_dirs
-conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
-conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/pkgs_dirs
+conda config --add envs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/envs_dirs
+conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/pkgs_dirs
 conda config --add channels bioconda
 
-#check installtion worked
-conda config
+#check installation worked
+conda info
 ```
 
 
