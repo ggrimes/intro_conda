@@ -44,6 +44,9 @@ cd /exports/eddie/scratch/${USER}
 # load anaconda
 module load anaconda/5.3.1
 
+#If this is the first time using conda run
+conda init
+
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
 conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/pkgs_dirs
