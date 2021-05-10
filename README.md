@@ -55,7 +55,8 @@ source ~/.bashrc
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/envs_dirs
 conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/pkgs_dirs
-conda config --add channels bioconda
+conda config --append channels bioconda
+conda config --append channels conda-forge
 
 #check installation worked
 conda info
