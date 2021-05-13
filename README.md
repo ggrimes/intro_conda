@@ -32,7 +32,7 @@
 ## Log into Eddie
 
 ```
-module load anaconda/5.3.1
+module load igmm/apps/anaconda/2020.02
 
 
 ##log into worker node
