@@ -73,6 +73,9 @@ https://edcarp.github.io/introduction-to-conda-for-data-scientists/
 
 # Feedback survey
 
+It is very important to capture feedback for this lesson. Please fill out the form below.
+
+https://forms.gle/Bv1bkiQ6JJQ2bxdw5
 
 # Useful Links
 
