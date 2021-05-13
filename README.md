@@ -65,6 +65,7 @@ conda info
 
 # Course materials
 
+https://edcarp.github.io/introduction-to-conda-for-data-scientists/
 
 # Slides
 [google slides](https://docs.google.com/presentation/d/16LL23dTqJr9CmnGo2I8PPy6vmQhGFoRTfdndAeUOs18/edit?usp=sharing)
