@@ -21,19 +21,17 @@
 * conda [channels](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html#:~:text=Conda%20channels%20are%20the%20locations,to%20directories%20containing%20conda%20packages.)
 
 
-# Anaconda on Eddie
-
-[Anaconda on Eddie](https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda)
+# Setup
 
 
+Some useful notes for [Anaconda on Eddie](https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda)
+
+**Important is you already have a functioning version of conda (version > 4.8) on eddie you may skip these steps**
 
 
 ## Log into Eddie
 
-```
-
-
-
+~~~
 ##log into worker node
 qlogin -l h_vmem=8G
 
@@ -50,7 +48,11 @@ conda init
 
 #source .bashrc
 source ~/.bashrc
+~~~
 
+Configuration
+
+~~~
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/envs_dirs
 conda config --add pkgs_dirs /exports/igmm/eddie/carpentries/conda/pkgs_dirs
@@ -59,7 +61,7 @@ conda config --add channels conda-forge
 
 #check installation worked
 conda info
-```
+~~~
 
 # Course materials
 
