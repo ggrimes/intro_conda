@@ -49,7 +49,7 @@ conda init
 
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
-conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/pkgs_dirs
+conda config --add pkgs_dirs /exports/igmm/eddie/carpentries/conda/pkgs_dirs
 
 #check installtion worked
 conda config
