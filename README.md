@@ -61,6 +61,15 @@ conda config --add channels conda-forge
 conda info
 ```
 
+# Course materials
+
+
+# Slides
+(google slides)[https://docs.google.com/presentation/d/16LL23dTqJr9CmnGo2I8PPy6vmQhGFoRTfdndAeUOs18/edit?usp=sharing]
+
+
+# Feedback survey
+
 
 # Useful Links
 
