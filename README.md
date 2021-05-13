@@ -44,6 +44,8 @@ module load anaconda/5.3.1
 
 #If this is the first time using conda run
 conda init
+# source your .bashrc
+source ~/.bashrc
 
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/envs_dirs
