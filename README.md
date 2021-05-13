@@ -4,8 +4,6 @@
 ## What you will learn
 
 * What [conda](https://docs.conda.io/projects/conda/en/latest/index.html) is.
-* How to load the conda package on [eddie](https://www.ed.ac.uk/information-services/research-support/research-computing/ecdf/high-performance-computing)
-  - ```module load anacoda anaconda/5.3.1```
 * Setting up conda variables on eddie,
   - conda [config --add](https://docs.conda.io/projects/conda/en/latest/commands/config.html)
   - envs_dirs
