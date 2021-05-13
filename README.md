@@ -5,7 +5,6 @@
 
 * What [conda](https://docs.conda.io/projects/conda/en/latest/index.html) is.
 * How to load the conda package on [eddie](https://www.ed.ac.uk/information-services/research-support/research-computing/ecdf/high-performance-computing)
-  - ```module load anacoda anaconda/5.3.1```
 * Setting up conda variables on eddie,
   - conda [config --add](https://docs.conda.io/projects/conda/en/latest/commands/config.html)
   - envs_dirs
@@ -44,7 +43,7 @@ mkdir conda_tutorial
 cd conda_tutorial
 
 # load anaconda
-module load roslin/conda/4.9.1
+module load igmm/apps/anaconda/2020.02
 
 #If this is the first time using conda run
 conda init
@@ -55,8 +54,8 @@ source ~/.bashrc
 # set envs_dirs & pkgs_dirs
 conda config --add envs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/envs_dirs
 conda config --add pkgs_dirs /exports/eddie/scratch/${USER}/conda_tutorial/pkgs_dirs
-conda config --append channels bioconda
-conda config --append channels conda-forge
+conda config --add channels bioconda
+conda config --add channels conda-forge
 
 #check installation worked
 conda info
