@@ -65,7 +65,7 @@ conda info
 
 
 # Slides
-(google slides)[https://docs.google.com/presentation/d/16LL23dTqJr9CmnGo2I8PPy6vmQhGFoRTfdndAeUOs18/edit?usp=sharing]
+[google slides](https://docs.google.com/presentation/d/16LL23dTqJr9CmnGo2I8PPy6vmQhGFoRTfdndAeUOs18/edit?usp=sharing)
 
 
 # Feedback survey
