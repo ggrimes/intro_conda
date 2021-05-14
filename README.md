@@ -41,8 +41,8 @@ mkdir conda_tutorial
 cd conda_tutorial
 
 # load anaconda
-#module load igmm/apps/anaconda/2020.02
-export PATH=/exports/igmm/eddie/carpentries/conda-tutorial/bin:${PATH}
+module load igmm/apps/anaconda/2020.02
+
 
 #If this is the first time using conda run
 conda init
