@@ -87,5 +87,5 @@ https://forms.gle/Bv1bkiQ6JJQ2bxdw5
 * [conda website](https://docs.conda.io/en/latest/)
 * [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
 * [understanding-and-improving-condas-performance](https://www.anaconda.com/blog/understanding-and-improving-condas-performance)
-* https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda
+* [Eddie Uoe Wiki on Anaconda](https://www.wiki.ed.ac.uk/pages/viewpage.action?spaceKey=ResearchServices&title=Anaconda)
 * [youtube video](https://www.youtube.com/watch?v=23aQdrS58e0&ab_channel=Academind)
