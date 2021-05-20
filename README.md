@@ -32,23 +32,29 @@ Some useful notes for [Anaconda on Eddie](https://www.wiki.ed.ac.uk/pages/viewpa
 ## Log into Eddie
 
 ~~~
+#on head node
+# load anaconda
+module load igmm/apps/anaconda/2020.02
+#If this is the first time using conda run
+conda init
+
+#source .bashrc
+source ~/.bashrc
+
+
 ##log into worker node
 qlogin -l h_vmem=8G
+
+#load the conda module again
+module load igmm/apps/anaconda/2020.02
+
 
 #move to your scratch directory
 cd /exports/eddie/scratch/${USER}
 mkdir conda_tutorial
 cd conda_tutorial
 
-# load anaconda
-module load igmm/apps/anaconda/2020.02
 
-
-#If this is the first time using conda run
-conda init
-
-#source .bashrc
-source ~/.bashrc
 ~~~
 
 Configuration
