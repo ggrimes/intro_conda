@@ -69,7 +69,7 @@ https://edcarp.github.io/introduction-to-conda-for-data-scientists/
 
 # Collaborative document
 
-https://hackmd.io/@ed-dash-workshop/rylhFwqOu/edit
+https://docs.google.com/document/d/1t66AseGhC7-v9t4qOBNB2pyFragLeSNq2JapARTnilU/edit?usp=sharing
 
 
 # Slides
